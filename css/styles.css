@@ -22,6 +22,7 @@
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+   
   }
 
   img {
@@ -52,6 +53,7 @@
     padding-left: 20px;
     padding-right: 20px;
     border-bottom: 1px solid #E7E9FC;
+box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 
   }
 
@@ -198,11 +200,15 @@ position: absolute;
   width: 100%;
   height: 100%;
   background: rgba(46, 47, 66, 0.4);
+transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    pointer-events 250ms cubic-bezier(0.4, 0, 0.2, 1);
   
 }
 .backdrop.is-hidden{
   opacity: 0;
   pointer-events: none;
+  
+    
 }
 .modal{
  
@@ -229,12 +235,13 @@ right: 0;
   border-radius: 50%;
 background: #E7E9FC;
 border: 1px solid rgba(0, 0, 0, 0.1);
+cursor: pointer;
   color: #000;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-  color 250ms cubic-bezier(0.4, 0, 0.2, 1);;
+  color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-button .modal-icon{
   fill: currentColor;
